@@ -1,9 +1,16 @@
-# chw
-<img src="cursed.png" alt="image" width="500" height="auto">
+# Cursed Hello World
 
-Within this repository lies cursed C code — a tangle of arcane logic that unsettles the minds of ordinary folk.
-Those unfit to dance with chaos should look away — this path leads only deeper into the void.
+A ridiculously overengineered Hello, World! written in C, abusing obscure language features, preprocessor tricks, inline assembly, and undefined-behavior-flavored pointer arithmetic to print a string.
 
-*In the forgotten corners of cyberspace, where compiler warnings echo like distant thunder, this grimoire was forged. Each line etched in C bears the fingerprints of madness — incantations whispered through pointers and hex. This is not a place for the sane.
-Here, logic loops twist into infinite spirals, and macros chant in recursive tongues. It is said those unprepared who gaze too long upon the source lose track of time... and sometimes, themselves.
-Only the techno-shamans — guardians of the low-level and keepers of undefined behavior — may tread these shadowed paths. They alone can interpret the runes, appease the segmentation gods, and perhaps, just perhaps... refactor the curse.*
+Because apparently printf("Hello, World!\n") was too mainstream.
+## Features
+- Trigraphs — Obscure C preprocessing sequences replace conventional syntax throughout the source.
+- K&R C — Old-style function definitions and parameter declarations.
+- Preprocessor metaprogramming — Uses parameterized and variadic macros, argument substitution, and conditional compilation to generate declarations and output logic.
+- Duff's Device — Eight-way loop unrolling with intentional switch fallthrough.
+- Flexible array members — A compiler-extension-based structure initializer for storing the message.
+- Pointer arithmetic abuse — Uses commutative array subscripting (a[b] == b[a]) to calculate message length without strlen().
+- Bitwise obfuscation — Reconstructs XOR and individual ASCII characters using alternative operations.
+- Inline assembly & raw syscalls — Writes directly to stdout without standard library I/O.
+- Linker-level chaos — Hides a global variable behind an extern declaration and an intentionally questionable integer conversion.
+
